@@ -31,7 +31,7 @@ export default function CountryInfo({ countries }) {
   let borders;
   let flag;
 
-  countries.forEach((country) => {
+  countries.forEach((country) => { 
     if (country.numericCode === id) {
       name = country.name;
       native = country.nativeName;
