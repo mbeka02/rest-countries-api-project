@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 //Custom hook
 import { useTheme } from "../hooks/useTheme";
-export default function Search({ change }) {
+export default function Search({ change, Queryvalue }) {
   const { mode } = useTheme();
   //Styling
   const style = {
@@ -20,6 +20,7 @@ export default function Search({ change }) {
         className="search-bar"
         placeholder="Search for a country..."
         onChange={change}
+        value={Queryvalue}
         style={style}
       ></input>
     </div>
