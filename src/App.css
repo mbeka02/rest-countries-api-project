@@ -29,6 +29,8 @@ body {
 .toggle-section {
   display: flex;
   width: 10rem;
+  gap: 1rem;
+  cursor: pointer;
 
   align-items: center;
 }
@@ -41,14 +43,14 @@ body {
 /*Card component*/
 .card {
   width: 22rem;
-
+  cursor: pointer;
   border-radius: 10px;
   box-shadow: 0px 10px 19px -8px rgba(0, 0, 0, 0.5);
   transition: ease-in-out 500ms;
 }
 .card:hover {
-  transform: scale(1.1);
-  transition: ease-in-out 500ms;
+  transform: scale(1.04);
+  transition: ease-in-out 600ms;
 }
 .flag--container {
   height: 12rem;
@@ -171,8 +173,8 @@ body {
   background-color: white;
   height: fit-content;
   padding: 0.5rem 0.8rem 0.5rem 0.8rem;
-  box-shadow: 3px 9px 17px -3px rgba(0, 0, 0, 0.5);
-  border-radius: 8px;
+  box-shadow: 3px 9px 17px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
   font-size: 1rem;
 }
 .back-btn {
