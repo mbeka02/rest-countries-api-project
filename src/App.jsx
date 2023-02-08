@@ -8,6 +8,7 @@ import Navbar from "./Components/Navbar";
 import { useState, useEffect, useRef } from "react";
 //Context
 import { ThemeContext } from "./helper/Context";
+
 //Routing
 import { Route, Routes, useNavigate } from "react-router-dom";
 //Misc.
@@ -37,7 +38,7 @@ function App() {
   const fetchData = async () => {
     const res = await fetch("https://restcountries.com/v2/all");
     const data = await res.json();
-
+   
     setCountries(data);
     setLoading(false);
   };
@@ -112,7 +113,7 @@ function App() {
             element={
               <div className="Home">
                 <div className="Home--container">
-                  <Search change={Change} />
+                  <Search change={Change} Queryvalue={query} />
                   <Filter handleChange={regionSelector} ref={regionRef} />
                 </div>
 
